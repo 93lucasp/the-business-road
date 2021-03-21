@@ -2,28 +2,32 @@
   <div>
     <app-container class="py-6 flex items-center space-x-4">
       <button
-        class="px-6 py-1.5 rounded-lg border border-solid focus:outline-none"
+        class="px-6 py-1.5 rounded-lg border border-solid focus:outline-none flex items-center justify-center"
         @click="setView('history')"
         :class="{
           'bg-green-700 text-white border-green-600': view === 'history',
           'border-gray-600': view === 'original-idea',
         }"
       >
+        <icon-read class="w-4 h-4 fill-current mr-2" />
         History
       </button>
       <button
-        class="px-6 py-1.5 rounded-lg border border-solid focus:outline-none"
+        class="px-6 py-1.5 rounded-lg border border-solid focus:outline-none flex items-center justify-center"
         @click="setView('original-idea')"
         :class="{
           'bg-green-700 text-white border-green-600': view === 'original-idea',
           'border-gray-600': view === 'history',
         }"
       >
+        <icon-idea class="w-4 h-4 fill-current mr-2" />
         Original idea
       </button>
     </app-container>
     <app-container v-if="view === 'history'" class="py-6">
-      <h1 class="font-bold text-xl md:text-3xl mb-4">The History of Whatsapp</h1>
+      <h1 class="font-bold text-xl md:text-3xl mb-4">
+        The History of Whatsapp
+      </h1>
       <div class="relative">
         <span
           class="absolute inset-y-0 block h-full w-px bg-gray-700 left-1/2"
@@ -38,8 +42,8 @@
               >
                 2007
               </div>
-              Jan Koum and Brian Acton decided to quit their job at Yahoo and to
-              have a rest travelling in south america
+              <b>Jan Koum</b> and <b>Brian Acton</b> decided to quit their jobs
+              at Yahoo and relax while traveling around South America
             </div>
           </div>
           <div class="hidden md:inline-block md:w-1/12 relative py-16">
@@ -60,13 +64,8 @@
             <div
               class="inline-block rounded-lg bg-gray-600 p-4 mr-auto relative h-auto"
             >
-              <!-- <div
-            class="absolute -top-4 -left-4 bg-gray-700 px-2 py-1 rounded-lg"
-          >
-            2007
-          </div> -->
-              After a white they decided to apply for facebook but they have
-              been refused
+              After a while they applied for the job positions at Facebook but
+              they were refused
             </div>
           </div>
         </div>
@@ -80,9 +79,9 @@
               >
                 January 2009
               </div>
-              Jan bought an iphone and he understood the potential of app on
-              apple store and he had the idea to create a status near the name
-              of people so he discussed the idea with Brian.
+              Jan bought an iphone and he understood the potential of the Apple
+              store. Hence the idea of creating an app that showed a status next
+              to people's name
             </div>
           </div>
           <div class="hidden md:inline-block md:w-1/12 relative py-16">
@@ -103,12 +102,7 @@
             <div
               class="inline-block rounded-lg bg-gray-600 p-4 mr-auto relative h-auto"
             >
-              <!-- <div
-            class="absolute -top-4 -left-4 bg-gray-700 px-2 py-1 rounded-lg"
-          >
-            2007
-          </div> -->
-              They found a russian IOS developer Igor Solomennikov
+              Jan and Brian found a russian IOS developer Igor Solomennikov
             </div>
           </div>
         </div>
@@ -122,8 +116,9 @@
               >
                 24 february 2009
               </div>
-              They developed the app and they founded Whatsapp in California,
-              the name arrived from the sentence “What's up” and the word “app”
+              The app was developed and Whatsapp was founded in California, the
+              name arrived from the simple sentence “What's up” and the word
+              “app”
             </div>
           </div>
           <div class="hidden md:inline-block md:w-1/12 relative py-16">
@@ -144,15 +139,9 @@
             <div
               class="inline-block rounded-lg bg-gray-600 p-4 mr-auto relative h-auto"
             >
-              <!-- <div
-            class="absolute -top-4 -left-4 bg-gray-700 px-2 py-1 rounded-lg"
-          >
-            2007
-          </div> -->
-              The first version didn’t like to the people and had also a lot of
-              problems with battery and crash, Jan was disappointed and wanted
-              to look for another job but Brian said that he would be an idiot
-              to leave in that moment to give it other few months.
+              People didn’t like the first version and it also had a lot of
+              problems with battery and crash. Jan was disappointed and wanted
+              to look for another job but Brian said to give it other few months
             </div>
           </div>
         </div>
@@ -166,9 +155,9 @@
               >
                 June 2009
               </div>
-              Apple launched push notification to say to people they weren’t
-              using an app. So Jan changed Whatsapp to get a notification when
-              the user changes his status
+              Apple launched push notifications to say to people they weren’t
+              using an app. So Jan changed Whatsapp to get notification every
+              time when the user changes his status
             </div>
           </div>
           <div class="hidden md:inline-block md:w-1/12 relative py-16">
@@ -189,14 +178,9 @@
             <div
               class="inline-block rounded-lg bg-gray-600 p-4 mr-auto relative h-auto"
             >
-              <!-- <div
-            class="absolute -top-4 -left-4 bg-gray-700 px-2 py-1 rounded-lg"
-          >
-            2007
-          </div> -->
-              They noticed that people used status also to communicate so they
-              understood that the need was to text with people and they launched
-              that was a instant messaging application
+              Founders noticed that people used status also to communicate so
+              they understood the need of people and launched an instant
+              messaging application
             </div>
           </div>
         </div>
@@ -205,16 +189,11 @@
             <div
               class="inline-block rounded-lg bg-gray-600 p-4 ml-auto relative h-auto"
             >
-              <!-- <div
-            class="absolute -top-4 -right-4 bg-gray-700 px-2 py-1 rounded-lg"
-          >
-            June 2009
-          </div> -->
               People loved the idea of logging in with just a phone number and
               sending messages to contacts using the internet instead of
-              operator SMS plans, and the number of the user increased very fast
-              to 250.000, at this point Brian that wasn’t an active member
-              decided to join Whatsapp
+              operator SMS plans. The number of users increased immediately to
+              250.000. At this point Brian who wasn’t an active member decided
+              to join Whatsapp
             </div>
           </div>
           <div class="hidden md:inline-block md:w-1/12 relative py-16">
@@ -240,7 +219,7 @@
               >
                 October 2009
               </div>
-              Brian convinced 5 ex-collagues of yahoo to invest 250.000$ in
+              Brian convinced ex-colleagues from Yahoo to invest 250.000$ in
               Whatsapp
             </div>
           </div>
@@ -250,14 +229,8 @@
             <div
               class="inline-block rounded-lg bg-gray-600 p-4 ml-auto relative h-auto"
             >
-              <!-- <div
-            class="absolute -top-4 -right-4 bg-gray-700 px-2 py-1 rounded-lg"
-          >
-            June 2009
-          </div> -->
-              in the beginning the app was only for iphone but after they found
-              another developer and they started to develop it also for
-              blackberry
+              In the beginning the app was only for iphone but after it became
+              available also for Blackberry
             </div>
           </div>
           <div class="hidden md:inline-block md:w-1/12 relative py-16">
@@ -278,14 +251,11 @@
             <div
               class="inline-block rounded-lg bg-gray-600 p-4 mr-auto relative h-auto"
             >
-              <!-- <div class="absolute -top-4 -left-4 bg-gray-700 px-2 py-1 rounded-lg">
-            October 2009
-          </div> -->
-              Moreover, Koum and Acton also worked for free for the first few
+              Moreover, Jan and Brian also worked for free for the first few
               years and the only big costs during the initial days were sending
               verification texts to users. To make up for this, the business
-              model was changed to paid one (costing $0.99) as the application
-              was spreading faster than the investments coming in.
+              model was changed to paid one (costing $0.99) as the app was
+              spreading faster than the investments coming in
             </div>
           </div>
         </div>
@@ -299,7 +269,7 @@
               >
                 December 2009
               </div>
-              They added the feature to send also media
+              The feature to send media was added to the app
             </div>
           </div>
           <div class="hidden md:inline-block md:w-1/12 relative py-16">
@@ -325,7 +295,7 @@
               >
                 2011
               </div>
-              Whatsapp is one of the first 20 app downloaded in USA
+              WhatsApp is one of the 20 most downloaded apps in USA
             </div>
           </div>
         </div>
@@ -339,7 +309,7 @@
               >
                 April 2011
               </div>
-              Sequoia invested 8 milion for the 15% of the company
+              Sequoia Capital invested 8 million for the 15% of the company
             </div>
           </div>
           <div class="hidden md:inline-block md:w-1/12 relative py-16">
@@ -365,9 +335,9 @@
               >
                 February 2013
               </div>
-              whatsapp had more than 200 milions of active users and 50
-              employees and Sequoia invested other 50 milions and whatsapp was
-              valuated 1.5 bilion
+              Whatsapp had more than 200 million active users and 50 employees
+              so Sequoia invested other 50 million. WhatsApp was valuated 1.5
+              billion
             </div>
           </div>
         </div>
@@ -376,15 +346,10 @@
             <div
               class="inline-block rounded-lg bg-gray-600 p-4 ml-auto relative h-auto"
             >
-              <!-- <div
-            class="absolute -top-4 -right-4 bg-gray-700 px-2 py-1 rounded-lg"
-          >
-            April 2011
-          </div> -->
-              Whatsapp changed the operating model to a subscription model where
-              the application was offered for free for the first year but the
-              users were charged an annual subscription fee of $1 after the
-              trial ended.
+              The operating model was changed to a subscription model where the
+              application was offered for free for the first year but the users
+              were charged an annual subscription $1 fee after the trial period
+              ended
             </div>
           </div>
           <div class="hidden md:inline-block md:w-1/12 relative py-16">
@@ -410,7 +375,7 @@
               >
                 December 2013
               </div>
-              whatsapp had more than 400 milions active monthly user
+              The number of monthly active users was more than 400 million
             </div>
           </div>
         </div>
@@ -424,8 +389,8 @@
               >
                 February 2014
               </div>
-              Facebook bought whatsapp for 19 billion(the biggest acquiring of
-              the time) promising that they wouldn’t add ads
+              Facebook bought Whatsapp for 19 billion (the biggest acquistion of
+              the time) promising that ads wouldn’t be added
             </div>
           </div>
           <div class="hidden md:inline-block md:w-1/12 relative py-16">
@@ -451,8 +416,8 @@
               >
                 August 2014
               </div>
-              Whatsapp was the most used messagging app with more of 600 milions
-              of active user
+              Whatsapp became the most used messaging app with more than 600
+              million active users
             </div>
           </div>
         </div>
@@ -466,7 +431,8 @@
               >
                 January 2016
               </div>
-              Whatsapp is again free and in february 2016 the user were 1 bilion
+              The app became free again and in February 2016 the number of users
+              was 1 billion
             </div>
           </div>
           <div class="hidden md:inline-block md:w-1/12 relative py-16">
@@ -492,7 +458,8 @@
               >
                 September 2017
               </div>
-              The coufounder Brian left the company to work on Signal
+              The cofounder Brian left the company for the work on Signal
+              Foundation
             </div>
           </div>
         </div>
@@ -506,7 +473,7 @@
               >
                 April 2018
               </div>
-              ceo and coufound Jan left whatsapp
+              CEO and cofounder Jan left WhatsApp
             </div>
           </div>
           <div class="hidden md:inline-block md:w-1/12 relative py-16">
@@ -520,9 +487,12 @@
     </app-container>
 
     <app-container v-if="view === 'original-idea'" class="py-6 relative">
-      <h1 class="font-bold text-xl md:text-3xl mb-4">The original Idea of Whatsapp</h1>
+      <h1 class="font-bold text-xl md:text-3xl mb-4">
+        The original Idea of Whatsapp
+      </h1>
       <p class="text-lg">
-        It was to build an app that would show statuses next to individual names of the people
+        Was to create a new type of messanging app that would show statuses next
+        to individual names of people.
       </p>
     </app-container>
   </div>
@@ -530,10 +500,14 @@
 
 <script>
 import AppContainer from "~/components/AppContainer.vue";
+import IconIdea from "~/assets/icon/idea.svg";
+import IconRead from "~/assets/icon/read.svg";
 
 export default {
   components: {
     AppContainer,
+    IconIdea,
+    IconRead,
   },
   data() {
     return {
